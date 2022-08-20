@@ -34,6 +34,7 @@ module.exports = {
             if(!queue.connection){
                 await queue.connect(interaction.member.voice.channel)
             }
+            interaction.followUp({ content: `G2G` });
         } catch (error) {
             queue.destroy()
             console.log(error)
