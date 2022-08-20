@@ -19,7 +19,7 @@ const client = new Discord.Client({
         "GUILD_VOICE_STATES"
     ]
 })
-
+ 
 client.slashcommands = new Discord.Collection()
 client.player = new Player(client, {
     ytdlOptions: {
